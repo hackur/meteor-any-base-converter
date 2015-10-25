@@ -1,0 +1,16 @@
+general:
+  build_dir: .
+
+dependencies:
+  pre:
+    - curl https://install.meteor.com | /bin/sh
+
+test:
+  override:
+    - VELOCITY_TEST_PACKAGES=1 meteor test-packages --driver-package velocity:html-reporter --velocity --release velocity:METEOR@1.2.0.1_1 ./
+
+experimental:
+  notify:
+    branches:
+      only:
+        - master
