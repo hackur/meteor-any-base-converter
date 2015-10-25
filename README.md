@@ -1,3 +1,4 @@
+[![Circle CI](https://circleci.com/gh/bookmd/meteor-any-base-converter.svg?style=shield)](https://circleci.com/gh/bookmd/meteor-any-base-converter)
 # meteor-any-base-converter
 Arbitrary base conversion for Meteor
 
