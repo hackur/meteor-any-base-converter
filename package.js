@@ -3,14 +3,14 @@
  */
 Package.describe({
   name: 'bookmd:any-base-converter',
-  version: '0.0.1',
+  version: '0.1.0',
   summary: 'Util converter. Convert from any string representable base to another',
   git: ''
 });
 
 Package.onUse(function (api) {
   api.use([
-    'ecmascript'
+    'ecmascript@0.1.0'
   ]);
 
   api.addFiles([
