@@ -4,8 +4,8 @@
 Package.describe({
   name: 'bookmd:any-base-converter',
   version: '0.1.0',
-  summary: 'Util converter. Convert from any string representable base to another',
-  git: ''
+  summary: 'Convert from any string representable base (redix) to another',
+  git: 'https://github.com/bookmd/meteor-any-base-converter'
 });
 
 Package.onUse(function (api) {

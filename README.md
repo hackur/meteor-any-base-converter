@@ -41,7 +41,7 @@ BaseConverter.BASE52 = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
 Take for example BASE16, the string is composed out of the standard 'digits' for the Hexadecimal base, the index of every character
 defines its value. For example 'a' in base 16 is at index 10, so its value (in decimal base) is 10.
 
-These predefined bases or for fast usage of standard bases, you can use them or define your own custom bases.
+These predefined bases are for fast usage of standard bases, you can use them or define your own custom bases.
 
 ## Functions
 ### convert
@@ -139,5 +139,5 @@ Any 'number' (in decimal base or otherwise) with a value greater OR EQUAL to sai
 For example the number '9007199254740992' in decimal base will throw an exception, same as
 'FfGNdXsE8' in Base-62. In fact, they have the same value.
 
-Note that the exception thrown will contain the number in DECIMAL form, so when if you whant to handle
-the expetion based in it's message be sure to use a ReEx and not the passed 'number'.
+Note that the exception thrown will contain the number in DECIMAL form, so when if you want to handle
+the exception based on it's message be sure to use a ReEx and not the passed 'number'.
