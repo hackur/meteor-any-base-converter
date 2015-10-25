@@ -1,27 +1,27 @@
 # meteor-any-base-converter
 Arbitrary base conversion for Meteor
 
-* [Dependencies](depends)
-* [Install](install)
-* [Base Representation](baserep)
-* [Functions](function)
-  * [convert](convert-func)
-  * [baseConverter](baseConverter-func)
-  * [fromNumber](fromNumber-func)
-  * [toNumber](toNumber-func)
-* [Limitation](limitation)
+* [Dependencies](#Dependencies)
+* [Install](#Install)
+* [Base Representation](#Base Representation)
+* [Functions](#Functions)
+  * [convert](#convert)
+  * [baseConverter](#baseConverter)
+  * [fromNumber](#fromNumber)
+  * [toNumber](#toNumber)
+* [Limitation](#Limitation)
 
-# [Dependency](#depends)
+## Dependency
 * [`ecmascript`](https://atmospherejs.com/meteor/ecmascript)
 
-# [Install](#install)
+## Install
 `meteor add bookmd:any-base-converter`
 
-# [Usage](#usage)
+## Usage
 This package allows you to perform base conversion similar to the javascript `Number.toString(n)` function.
 While toString() only supports predefined bases from 2-36, this package supports any custom base definition representable by a string.
 
-## [Base Representation](#baserep)
+## Base Representation
 A base is defined by a string made out of all the allowed 'digits' ordered by value.
 
 For example, here are the package predefined bases:
@@ -42,8 +42,8 @@ defines its value. For example 'a' in base 16 is at index 10, so its value (in d
 
 These predefined bases or for fast usage of standard bases, you can use them or define your own custom bases.
 
-## [Functions](#function)
-### [convert](#convert-func)
+## Functions
+### convert
 Use the convert method to convert a source 'number' from any base to any other base.
 
 Using this function you'll need to provide the 'number' you wish to convert, the base definition of that 'number',
@@ -69,7 +69,7 @@ BaseConverter.convert('396', '01234567', '0123456789abcdef'); // BASE8 to BASE16
 Note, the function might also throw an exception for very large numbers, this is by design, see Limition to understand
 why.
 
-### [baseConverter](#baseConverter-func)
+### baseConverter
 If you perform a lot of conversion from one specific base to another in multiple places in your code,
 you should consider using the `baseConvertor` function.
 
@@ -88,7 +88,7 @@ You can of course pass in custom bases instead of the predefined bases.
 Note that the return function throws the same exceptions as the 'convert' function, i.e for a 'number' which includes
 a character not defined in the in the source-base definition, or for very large 'numbers'.
 
-### [fromNumber](#fromNumber-func)
+### fromNumber
 If your source number is in the decimal base and you don't want to convert your Number into String before performing
 the base-conversion you can use the fromNumber function.
 
@@ -109,7 +109,7 @@ Notice that the conversion does not support floating point number, only integers
 integer, passing a floating point will result in an incorrect result.
 (If you need this type of conversion feel free to contribute)
 
-### [toNumber](#toNumber-func)
+### toNumber
 If you want to convert a 'number' from any base to the decimal base and to receive a number, you can use the toNumber function.
 It is even (very) slightly more efficient.
 
@@ -131,7 +131,7 @@ BaseConverter.fromNumber('396', '01234567');
   // BaseConversionError: Symbol '9' is not defined in source base '01234567'
 ```
 
-## [Limitation](#limitation)
+## Limitation
 Conversion is limited by javascript `Number.MAX_SAFE_INTEGER`, currently set to 9007199254740991.
 Any 'number' (in decimal base or otherwise) with a value greater OR EQUAL to said constant will result in an exception.
 
