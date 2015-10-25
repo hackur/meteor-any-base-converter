@@ -1,15 +1,15 @@
 # meteor-any-base-converter
 Arbitrary base conversion for Meteor
 
-* [Dependencies](#Dependencies)
-* [Install](#Install)
-* [Base Representation](#Base Representation)
-* [Functions](#Functions)
+* [Dependencies](#dependencies)
+* [Install](#install)
+* [Base Representation](#base-representation)
+* [Functions](#functions)
   * [convert](#convert)
-  * [baseConverter](#baseConverter)
-  * [fromNumber](#fromNumber)
-  * [toNumber](#toNumber)
-* [Limitation](#Limitation)
+  * [baseConverter](#baseconverter)
+  * [fromNumber](#fromnumber)
+  * [toNumber](#tonumber)
+* [Limitation](#limitation)
 
 ## Dependency
 * [`ecmascript`](https://atmospherejs.com/meteor/ecmascript)
