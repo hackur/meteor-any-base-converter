@@ -19,7 +19,7 @@ describe('BaseConverter', function () {
       let b8 = {args: ['273514561', BaseConverter.BASE8], result: 49191281};
       let b10 = {args: ['3619210471831', BaseConverter.BASE10], result: 3619210471831};
       let b16 = {args: ['59819d71528', BaseConverter.BASE16], result: 6150826693928};
-      let b32 = {args: ['378asjd2k19', BaseConverter.BASE32], result: 11702809658485484};
+      let b32 = {args: ['378asjd2k19', BaseConverter.BASE36], result: 11702809658485484};
       let b62 = {args: ['21shJK2jA1', BaseConverter.BASE62], result: 27392125917331572};
 
       let b26 = {args: ['mncaoiejkdl', BaseConverter.BASE26], result: 1765010771661161};
@@ -50,7 +50,7 @@ describe('BaseConverter', function () {
       let b8 = {args: [49191281, BaseConverter.BASE8], result: '273514561'};
       let b10 = {args: [3619210471831, BaseConverter.BASE10], result: '3619210471831'};
       let b16 = {args: [6150826693928, BaseConverter.BASE16], result: '59819d71528'};
-      let b32 = {args: [117028485484, BaseConverter.BASE32], result: '1hrfqlbg'};
+      let b32 = {args: [117028485484, BaseConverter.BASE36], result: '1hrfqlbg'};
       let b62 = {args: [27392117331572, BaseConverter.BASE62], result: '7MfIMNbC'};
 
       let b26 = {args: [1765010771661161, BaseConverter.BASE26], result: 'mncaoiejkdl'};
@@ -76,8 +76,8 @@ describe('BaseConverter', function () {
       let b2ToB8 = {args: ['100110110101', BaseConverter.BASE2, BaseConverter.BASE8], result: '4665'};
       let b8ToB10 = {args: ['312567', BaseConverter.BASE8, BaseConverter.BASE10], result: '103799'};
       let b10ToB16 = {args: ['138735', BaseConverter.BASE10, BaseConverter.BASE16], result: '21def'};
-      let b16ToB32 = {args: ['39fea', BaseConverter.BASE16, BaseConverter.BASE32], result: '53ai'};
-      let b32ToB62 = {args: ['9gfi2', BaseConverter.BASE32, BaseConverter.BASE62], result: '14DVw'};
+      let b16ToB32 = {args: ['39fea', BaseConverter.BASE16, BaseConverter.BASE36], result: '53ai'};
+      let b32ToB62 = {args: ['9gfi2', BaseConverter.BASE36, BaseConverter.BASE62], result: '14DVw'};
       let b62ToB2 = {args: ['6f2GaZ2', BaseConverter.BASE62, BaseConverter.BASE2], result: '101001010001110110010110101110101100000'};
 
       this.standardCases = [b2ToB8, b8ToB10, b10ToB16, b16ToB32, b32ToB62, b62ToB2];
