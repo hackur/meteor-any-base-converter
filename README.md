@@ -11,7 +11,7 @@ Arbitrary base conversion for Meteor
   * [toNumber](#tonumber)
 * [Limitation](#limitation)
 
-## Dependency
+## Dependencies
 * [`ecmascript`](https://atmospherejs.com/meteor/ecmascript)
 
 ## Install
